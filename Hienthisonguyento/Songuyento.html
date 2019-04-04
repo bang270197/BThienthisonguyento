@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var number = parseInt(prompt("Nhap so luong so nguyen to: "));
+    var count = 1;
+    var N = 2;
+    var a=true;
+    var i=2;
+    input = number + " so nguyen to dau tien la :" + N;
+    N++;
+    while (count<number)
+    {
+        while (i<N)
+        {
+            if(N%i==0)
+            {
+                a=false;
+                break;
+            }else {
+                a=true;
+
+            }
+            i++;
+        }
+        if (a)
+        {
+            input+= " "+N;
+            count++;
+        }
+        N+=2;
+        i=2;
+    }
+    alert(input);
+  /*  for (count = 1; count < number; ) {
+        for (i = 2; i < N;i++ ) {
+            if (N % i == 0) {
+                a=false;
+                break;
+            } else {
+                a=true;
+            }
+        }
+        if(a)
+        {
+            input=input + " " + N;
+            count++;
+        }
+        N +=2;
+        i = 2;
+    }
+    alert(input);*/
+
+</script>
+</body>
+</html>
